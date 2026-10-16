@@ -1,0 +1,7 @@
+question,local_browser_or_desktop,upload_converter
+Where do bytes go?,Stay on your device,Uploaded to their convert API
+Account / free-tier limits,None on a local tool / FFmpeg / VLC path,Often login; daily minutes or size caps
+Remux vs always re-encode,You (or the tool) try stream-copy first,Often opaque convert that re-encodes
+Private / client / wedding risk,No conversion upload,Trust retention + staff access
+Batch / huge 4K,Desktop FFmpeg on the same machine,Remote queue may accept size then still hold a copy
+Proof,DevTools Network: no media POST to a third-party convert API,Expect large upload request

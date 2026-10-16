@@ -1,0 +1,8 @@
+container_in,video_codec,audio_codec,remux_c_copy_to_mp4,typical_result,notes
+MOV,H.264,AAC,yes,Plays widely; no quality loss,Preferred remux path
+MOV,HEVC / H.265,AAC,often_yes_technically,MP4 still needs an HEVC decoder on the player,Stock Windows Movies & TV may still fail
+MOV,ProRes / DNx / uncommon,any,usually_no_for_delivery,Re-encode to H.264 for web/share; keep ProRes in MOV for NLE,Camera masters
+MOV,any,PCM / exotic,often_fails_or_bulky,Re-encode audio to AAC; copy video if possible,
+MKV,H.264,AAC,yes,Fast remux; no quality loss,OBS crash-safe MKV often lands here
+MKV,HEVC / VP9,odd_or_any,prefer_reencode,H.264 + AAC for phones / LMS / picky editors,
+MKV,any,AC-3 / Opus / uncommon,prefer_reencode_audio_or_full,Widest MP4 playback usually wants AAC,
